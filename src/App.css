@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f3ed;
+  color: #2f2924;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-header,
+.site-footer {
+  background: #ffffff;
+  border-bottom: 1px solid #eadfd1;
+  padding: 18px max(20px, calc((100vw - 1100px) / 2));
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+}
+
+nav a {
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #6d6259;
+  font-weight: 700;
+}
+
+nav a:hover,
+nav a.active {
+  background: #f0e5d8;
+  color: #2f2924;
+}
+
+.page {
+  width: min(1100px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 34px 0;
+  flex: 1;
+}
+
+.hero,
+.panel {
+  background: #ffffff;
+  border: 1px solid #eadfd1;
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.hero h2,
+.panel h2,
+section > h2 {
+  margin: 0 0 12px;
+  font-size: 2rem;
+}
+
+.hero p,
+.panel p {
+  max-width: 620px;
+  margin: 0;
+  color: #6d6259;
+  line-height: 1.6;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.recipe-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #eadfd1;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(47, 41, 36, 0.08);
+}
+
+.recipe-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.recipe-card div {
+  padding: 14px;
+}
+
+.recipe-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.recipe-card p {
+  margin: 0;
+  color: #6d6259;
+  line-height: 1.5;
+}
+
+.site-footer {
+  border-top: 1px solid #eadfd1;
+  border-bottom: 0;
+  color: #6d6259;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 620px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav a {
+    flex: 1;
+    text-align: center;
+  }
+}

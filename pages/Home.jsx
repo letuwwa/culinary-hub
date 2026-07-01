@@ -1,3 +1,8 @@
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+    <section className="hero">
+      <h2>Cook something good today</h2>
+      <p>Browse simple recipes, collect ideas, and keep dinner moving.</p>
+    </section>
+  );
 }
