@@ -138,6 +138,11 @@ button:disabled {
   padding: 12px 14px;
 }
 
+.featured-recipe {
+  max-width: 360px;
+  margin: 22px auto 0;
+}
+
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

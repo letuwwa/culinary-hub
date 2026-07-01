@@ -9,11 +9,11 @@ export default function Navbar() {
         <NavLink to="/" className={linkClass}>
           Home
         </NavLink>
-        <NavLink to="/contact" className={linkClass}>
-          Contact
-        </NavLink>
         <NavLink to="/recipes" className={linkClass}>
           Recipes
+        </NavLink>
+        <NavLink to="/contact" className={linkClass}>
+          Contact
         </NavLink>
       </nav>
     </>
