@@ -87,6 +87,57 @@ section > h2 {
   line-height: 1.6;
 }
 
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.page-title h2 {
+  margin: 0 0 6px;
+  font-size: 2rem;
+}
+
+.page-title p {
+  margin: 0;
+  color: #6d6259;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #8f4f2a;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 10px 14px;
+}
+
+button:hover:not(:disabled) {
+  background: #753f21;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.error {
+  background: #fff4ed;
+  border: 1px solid #f0c1a8;
+  border-radius: 8px;
+  color: #8f3d1f;
+  margin: 18px 0 0;
+  padding: 12px 14px;
+}
+
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -148,5 +199,10 @@ section > h2 {
   nav a {
     flex: 1;
     text-align: center;
+  }
+
+  .page-title {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
