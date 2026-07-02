@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     async function getRandomRecipe() {
       try {
-        const randomRecipeId = Math.floor(Math.random() * 10) + 1;
+        const randomRecipeId = Math.floor(Math.random() * 50) + 1;
         const response = await fetch(
           `https://dummyjson.com/recipes/${randomRecipeId}`,
         );
