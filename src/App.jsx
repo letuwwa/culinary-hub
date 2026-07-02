@@ -4,6 +4,7 @@ import Home from "../pages/Home.jsx";
 import Contact from "../pages/Contact.jsx";
 import Layout from "../components/Layout.jsx";
 import Recipes from "../pages/Recipes.jsx";
+import RecipeDetails from "../pages/RecipeDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/contact", element: <Contact /> },
       { path: "/recipes", element: <Recipes /> },
+      { path: "/recipes/:id", element: <RecipeDetails /> },
     ],
   },
 ]);
